@@ -37,7 +37,7 @@ let all_questions = [
     {
         question_string: `It's best practice to use _____ for CSS`,
         choices: {
-            correct: 'Classes'
+            correct: 'Classes',
             wrong: ['<a> links', 'IDs', 'Scripts']
         }
     },
@@ -45,14 +45,19 @@ let all_questions = [
         question_string: `The best browser for a web developer to use is:`,
         choices: {
             correct: 'Google Chrome',
-            wrong: ['Internet Explorer', 'Safari', 'Firefox'']
+            wrong: ['Internet Explorer', 'Safari', 'Firefox']
         }
     },
     {
         question_string: `A great place to store your code repositories is:`,
         choices: {
-            correct: 'GitHub'
+            correct: 'GitHub',
             wrong: ['An incubator', 'Raviga', 'Hooli']
         }
     },
 ]
+
+let quiz = function(quiz_name) {
+    this.quiz_name = quiz_name
+    this.questions = []
+}
